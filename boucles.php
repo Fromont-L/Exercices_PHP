@@ -59,14 +59,15 @@
         <!--Exercice n°3-->
         <h2>Exercice 3</h2>
         <?php
-            //Boucle While pas random :(
+            //Boucle While aléatoire
             $varBoucleSimpleInf = 100;
             $varBoucleMultiInf = rand(1, 100);
 
             while ($varBoucleSimpleInf >= 10)
             {
                 echo strval($varBoucleSimpleInf - $varBoucleMultiInf) . ' ';
-                $varBoucleSimpleInf--;
+                // Erreur corrigée, j'avais oublié d'incrémenter à ma deuxième variable $varBoucleMultiInf, et en plus d'être aléatoire ça fonctionne !
+                $varBoucleSimpleInf-=$varBoucleMultiInf;
             }
         ?>
         <br/>

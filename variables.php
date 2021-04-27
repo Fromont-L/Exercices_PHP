@@ -55,8 +55,32 @@
     	</p>
     	<!--Exercice n°5-->
     	<?php
-	    	//Avant d'avoir rempli le champ de la variable = erreur
-	    	$chiffreSansValeur = 111;
+	    	//Correction de l'exercice 5, déclarer une variable vide
+            $chiffreSansValeur = NULL;
+	    	$chiffreSansValeur1 = '';
+            $chiffreSansValeur2 = 0;
+            $chiffreSansValeur3 = FALSE;
+            $chiffreSansValeur4 = NULL;
+            $chiffreSansValeur5 = 1;
+
+            if(empty($chiffreSansValeur1)){
+                echo '$chiffreSansValeur1 est vide' . '<br/>';
+            }
+            if(empty($chiffreSansValeur2)){
+                echo '$chiffreSansValeur2 est vide' . '<br/>';
+            }
+            if(empty($chiffreSansValeur3)){
+                echo '$chiffreSansValeur3 est vide' . '<br/>';
+            }
+            if(empty($chiffreSansValeur4)){
+                echo '$chiffreSansValeur4 est vide' . '<br/>';
+            }
+            if(empty($chiffreSansValeur5)){
+                echo '$chiffreSansValeur5 est vide' . '<br/>';
+            } else {
+                echo '$chiffreSansValeur5 n\'est pas vide, il est égal à :' . $chiffreSansValeur5 . '<br/>';
+            }
+
     	?>
     	<p>
     		Appel du chiffre vide : <?php echo $chiffreSansValeur;?>
